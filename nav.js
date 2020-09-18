@@ -45,7 +45,7 @@ function navBarHandler() {
                 newElement.innerHTML = `
                 <div>
                     <svg height="24" width="24">
-                        <path id="nav-icon" d="${dArr[j]}">
+                        <path class="nav-icon" d="${dArr[j]}">
                     
                         </path>
                     </svg>
@@ -56,7 +56,7 @@ function navBarHandler() {
                 newElement.innerHTML = `
                 <div>
                     <svg height="24" width="24">
-                        <path id="nav-icon" d="${dArr[j]}">
+                        <path class="nav-icon" d="${dArr[j]}">
                     
                         </path>
                     </svg>
@@ -71,7 +71,6 @@ function navBarHandler() {
             j++;
             nav.append(newElement);
         } else if (arrClass[i] === 'profile' && arrClass[i] !== 'divider') {
-            console.log(arrClass[i]);
             newElement.innerHTML = `
                 <div class="profile-photo">
                     <img src="image/Picture1.svg" height="24" width="24">
