@@ -30,7 +30,9 @@ for (let i = 0; i < imgArr.length; i++) {
                     + Follow
                 </div>
             </div>
-
+            <div class="border-bottom-style border-${i}">
+            
+            </div>
         </div>
     `
 
