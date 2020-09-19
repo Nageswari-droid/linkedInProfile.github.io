@@ -135,7 +135,12 @@ a:hover {
 
 .dummy-style {
     width: 100%;
-    height: 50px;
+    height: 43px;
+}
+
+.body-dummy-style {
+    width: 100%;
+    height: 25px;
 }
 
 .message-style {
@@ -152,6 +157,11 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.message-style:hover {
+    cursor: pointer;
+    background-color: #1b2c35;
 }
 
 .message-style-head {
@@ -335,6 +345,226 @@ a:hover {
     fill: rgb(101, 100, 100);
 }
 
-.menu-icon:hover {
+.profile-name-style-icon {
+    padding: 0px 8px;
+    border-radius: 60%;
+}
+
+.profile-name-style-icon:hover {
     cursor: pointer;
+    border: 0px solid transparent;
+    background-color: rgb(231, 228, 228);
+}
+
+.body-itmes-style {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.body-menu {
+    width: 19%;
+}
+
+.menu-bar {
+    width: 100%;
+    font-size: 14px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
+    border-radius: 2px;
+}
+
+.menu-bar .menu:not(:last-child) {
+    border-bottom: 1px solid rgb(193, 192, 192);
+}
+
+.menu {
+    color: #505050;
+    background-color: white;
+    font-weight: bolder;
+    padding: 16px 16px;
+    border-left: 6px solid transparent;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.menu:hover {
+    cursor: pointer;
+    color: #6f6c6c;
+}
+
+.home-body-style {
+    border-left-color: #0073B1;
+    color: #0073B1;
+}
+
+.home-body-style:hover {
+    color: #035a89;
+}
+
+.body-center-section {
+    width: 47%;
+}
+
+.body-side-section {
+    width: 27%;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.about-style {
+    width: 100%;
+    height: 192px;
+}
+
+.about-sub-style {
+    width: 100%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
+    height: 75%;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.about-head-style {
+    width: 100%;
+    height: 55%;
+    padding: 12px 0px 0px 16px;
+    color: rgb(82, 81, 81);
+    font-size: 18px;
+}
+
+.see-all-style {
+    text-align: center;
+    border-top: 1px solid rgb(203, 199, 199);
+    padding: 15px 0px;
+    color: #0073B1;
+    font-weight: bold;
+}
+
+.see-all-style:hover {
+    cursor: pointer;
+    color: #035a89;
+    text-decoration: underline;
+}
+
+.gallery-style {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery-menu-style {
+    width: 80%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgba(177, 190, 200, 0.45);
+    color: #6e7c85;
+    /* font-weight: 600; */
+    font-size: 16px;
+}
+
+.gallery:hover {
+    cursor: pointer;
+    color: #55626a;
+    background-color: rgba(162, 191, 212, 0.45);
+}
+
+.gallery-all-style {
+    background-color: #5C6F7C;
+    color: white;
+}
+
+.gallery-all-style:hover {
+    background-color: #4c5d68;
+    color: white;
+}
+
+.sort-by {
+    width: 15%;
+}
+
+.ad-section {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.ad-section-style {
+    width: 100%;
+    border-radius: 2px;
+    background-color: white;
+    height: 254px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+.ad-section-gallery img {
+    padding: 5px;
+    border-radius: 2px;
+    width: 295px;
+    height: 245px;
+}
+
+.suggestion-style {
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+    height: 100%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+.suggestion-head-style {
+    padding: 16px 0px 16px 12px;
+    font-size: 18px;
+}
+
+.dummy-new {
+    width: 100%;
+    height: 300px;
+}
+
+.comp-style-head {
+    max-width: 90%;
+    margin: auto;
+    display: block;
+    padding: 15px 0px 15px 0px;
+}
+
+.comp-display {
+    display: flex;
+    /* align-items: center; */
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.compa-name-sec {
+    display: block;
+}
+
+.title-style {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.desc-style {
+    font-size: 14px;
+    color: rgb(149, 149, 149);
+}
+
+.follow-comp-style {
+    color: #0073B1;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
 }
