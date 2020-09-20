@@ -1,4 +1,6 @@
 const nav = document.querySelector('.nav');
+const seeMore = document.querySelector('.request-style-see');
+const reqLinks = document.querySelector('.req-links');
 
 const arrClass = [
     'home',
@@ -88,3 +90,8 @@ function navBarHandler() {
 }
 
 navBarHandler();
+
+seeMore.addEventListener("click", () => {
+    reqLinks.style.display = "block";
+    seeMore.style.visibility = "hidden";
+});

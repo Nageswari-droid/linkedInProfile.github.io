@@ -1,6 +1,7 @@
 const menuBar = document.querySelector(".menu-bar");
 const menu = document.querySelectorAll(".menu");
 const bodyCenter = document.querySelector('.body-center-section');
+const seeAll = document.querySelector('.seee-all-style');
 
 const homeSec = document.querySelector('.body-head-center');
 const aboutSec = document.querySelector('.body-about-style');
@@ -58,3 +59,15 @@ function nodeHandler(idVal) {
     }
 
 }
+
+seeAll.addEventListener("click", () => {
+    while (bodyCenter.hasChildNodes()) {
+        var i = 0;
+        bodyCenter.childNodes[i].remove();
+        i++;
+    }
+
+    borderColorHandler(aboutBtn.id);
+    aboutSec.style.display = "block";
+    bodyCenter.appendChild(aboutSec);
+});

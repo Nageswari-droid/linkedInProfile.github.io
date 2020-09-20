@@ -438,6 +438,10 @@ a:hover {
     color: #6f6c6c;
 }
 
+.menu:active {
+    background-color: #d9eefa;
+}
+
 .home-body-style {
     border-left-color: #0073B1;
     color: #0073B1;
@@ -1175,6 +1179,23 @@ td {
 
 .loco-symbol:hover {
     cursor: pointer;
+}
+
+.jobs-body-sec {
+    display: none;
+}
+
+.req-links {
+    display: none;
+    margin-top: 20px;
+    color: #0073B1;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.link-dec:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 @keyframes blobAnimation {
