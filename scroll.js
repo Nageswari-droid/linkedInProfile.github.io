@@ -1,11 +1,21 @@
-const sticky = 10;
-const headerClass = document.querySelector('.header');
+const sticky = 5;
+const menuClass = document.querySelector('.body-menu');
+const body = document.querySelector('.body-center-section');
+const header = document.querySelector('.header-info');
 
 window.onscroll = function() {
-    console.log(window.pageYOffset + " " + sticky);
-    if (window.pageYOffset > sticky) {
-        headerClass.classList.add('header-nav')
+
+    if (window.pageYOffset > 423.23480224609375) {
+        menuClass.classList.add('menu-class');
+        body.classList.add('body-center-fixed');
     } else {
-        headerClass.classList.remove('hedaer-nav');
+        menuClass.classList.remove('menu-class');
+        body.classList.remove('body-center-fixed');
+    }
+
+    if (window.pageYOffset > 398.1913146972656) {
+        header.style.display = "block";
+    } else {
+        header.style.display = "none";
     }
 };
