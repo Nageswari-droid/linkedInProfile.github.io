@@ -38,72 +38,6 @@ for (let i = 0; i < pathArr.length; i++) {
     likeSec.append(newElement);
 }
 
-// const reqSec = document.querySelector('.request-thumbs-style');
-// const newLikeEle = document.createElement('div');
-// newLikeEle.className = `thumbs-style`;
-// newLikeEle.id = 'likeButton';
-// newLikeEle.innerHTML = `
-//     <div class="rounded-thumb">
-//         <div class="rounded-thumb-style">
-//             <div class="blob-icon thumbs" id="thumbs"></div>
-//             <div class="blob-icon love" id="love"></div>
-//             <div class="blob-icon insight" id="insight"></div>
-//             <div class="blob-icon think" id="think"></div>
-//             <div class="blob-icon clap" id="clap"></div>
-//             <div class="blob-icon hand" id="hand"></div>
-//         </div>
-//     </div>
-// `;
-
-// reqSec.prepend(newLikeEle);
-
-// const thumbBlob = document.querySelector('#likeButton');
-
-// thumbBlob.addEventListener('mouseover', (e) => {
-//     const blobArray = ['thumbs', 'love', 'insight', 'think', 'clap', 'hand'];
-
-//     for (let i = 0; blobArray.length; i++) {
-//         setInterval(function() {
-//             document.getElementById(blobArray[i]).style.animation =
-//                 'blobAnimation';
-//         }, 200);
-//     }
-// });
-
-// const thumbsUp = document.querySelector('.thumbs-style');
-
-// reqSec.addEventListener('mouseover', async() => {
-//     function sleep(t) {
-//         return new Promise((resolve) => {
-//             setTimeout(resolve, t);
-//         });
-//     }
-
-//     thumbsUp.style.visibility = 'visible';
-//     const blobArray = ['thumbs', 'love', 'insight', 'think', 'clap', 'hand'];
-//     await sleep(200);
-
-//     for (let i = 0; i < blobArray.length; i++) {
-//         console.log(blobArray[i]);
-
-//         if (document.getElementById(blobArray[i])) {
-//             document.getElementById(blobArray[i]).style.animation =
-//                 'blobAnimation';
-//             document.getElementById(blobArray[i]).style.animationDuration =
-//                 '600ms';
-//             document.getElementById(
-//                     blobArray[i]
-//                 ).style.animationTimingFunction =
-//                 'cubic-bezier(0.9, -0.12, 0, 0.94)';
-//             await sleep(60);
-//         }
-//     }
-// });
-
-// reqSec.addEventListener('mouseleave', () => {
-//     // thumbsUp.style.visibility = 'hidden';
-// });
-
 const likeCountInc = document.querySelector('.request-thumbs-style');
 const icon = document.querySelector('.comment-icon');
 
@@ -126,4 +60,16 @@ likeCountInc.addEventListener('click', () => {
         likeCountInc.style.fontWeight = '500';
         flag = 0;
     }
+});
+
+const seeAll = document.querySelector('.link-span');
+const reqDes = document.querySelector('.req-letters');
+const reqLinks = document.querySelector('.req-links');
+
+seeAll.addEventListener('click', () => {
+
+    reqDes.style.display = "block";
+    reqLinks.style.display = "block";
+    seeAll.style.display = "none";
+
 });

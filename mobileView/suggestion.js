@@ -31,7 +31,7 @@ function compHandler() {
                 </div>
                 
                 <div class="follow-comp-style">
-                    <div class="follow-suggest-style">
+                    <div class="follow-suggest-style" onclick="followHandler(this)">
                         + Follow
                     </div>
                 </div>
@@ -45,20 +45,34 @@ function compHandler() {
     }
 }
 
+const followBtn = document.querySelectorAll('.follow-suggest-style');
+const parentFollow = document.querySelectorAll('.follow-comp-style');
+
 function mouseHandler(event) {
-
-    // const descComp = document.querySelector('.desc-style');
-    // const compVar = document.querySelector('.comp-display');
-
     event.lastElementChild.lastElementChild.style.textDecoration = "underline";
-
 }
 
 function mouseLeaveHandler(event) {
-    // const descComp = document.querySelector('.desc-style');
-    // const compVar = document.querySelector('.comp-display');
-
     event.lastElementChild.lastElementChild.style.textDecoration = "none";
+}
+
+function followHandler(event) {
+
+    console.log(event.parentNode);
+    // console.log(parentFollow);
+    event.style.display = "none";
+
+    const newFollow = document.createElement('div');
+    newFollow.className = "follow-icon-new";
+    newFollow.innerHTML = `
+        <div class="following">
+            <svg width="16" height="16">                                    
+                <path style="fill:  rgb(99, 99, 99);" d="M15 3L6.57 13.72A.7.7 0 016 14a.72.72 0 01-.56-.27L1 8.07 2.36 7 6 11.72 13.68 2z"></path>
+            </svg>
+            <div style="color: rgb(99, 99, 99); font-size: 16px;">Following</div>
+        </div>
+    `;
+    event.parentNode.append(newFollow);
 }
 
 compHandler();

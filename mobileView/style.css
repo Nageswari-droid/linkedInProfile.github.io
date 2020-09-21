@@ -356,14 +356,32 @@ input[type=text] {
     padding: 0px 15px 0px 15px;
     max-width: 100%;
     font-size: 14px;
-    color: rgb(29, 29, 29);
+    color: rgb(20, 20, 20);
 }
 
 .req-letters {
-    display: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .req-links {
+    margin-bottom: 10px;
+}
+
+.req-links {
+    display: none;
+    margin-bottom: 10px;
+    color: #0073B1;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.link-dec:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.req-letters {
     display: none;
 }
 
@@ -797,4 +815,32 @@ input[type=text] {
     font-size: 16px;
     text-align: center;
     color: rgb(49, 49, 49);
+}
+
+.follow-icon-new {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.following {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.head-follow {
+    display: none;
+}
+
+.visit-visible {
+    width: 100%;
+    background-color: #0073B1;
+    color: white;
+    border: 1px solid #0073B1;
+}
+
+.button-visit-icon {
+    fill: white;
 }
