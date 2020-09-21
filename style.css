@@ -361,7 +361,7 @@ a:hover {
 .visit-btn:hover {
     cursor: pointer;
     text-decoration: underline;
-    border: 2px solid #0073B1;
+    box-shadow: 0px 0px 0px 1px #0073B1 inset;
     background-color: #d1e9f6;
 }
 
@@ -759,6 +759,7 @@ a:hover {
 
 .request-style-see:hover {
     cursor: pointer;
+    color: #0073B1;
 }
 
 .req-txt-new-style {
@@ -964,7 +965,8 @@ a:hover {
 
 .final-btn:hover {
     cursor: pointer;
-    border: 3px solid #0073B1;
+    /* border: 3px solid #0073B1; */
+    box-shadow: 0px 0px 0px 1px #0073B1 inset;
     background-color: #afe0fa;
 }
 
@@ -1196,6 +1198,73 @@ td {
 .link-dec:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.body-jobs-people-style {
+    display: none;
+    width: 79%;
+    height: 800px;
+}
+
+.body-jobs {
+    display: flex;
+    flex-direction: column;
+}
+
+.jobs-head,
+.jobs-details {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+.jobs-head {
+    padding: 12px 0px;
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.job-alert-head {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.job-alerts {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.jobs-btn-alert-style {
+    border: 1px solid grey;
+    color: grey;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.jobs-btn-alert-style:hover {
+    cursor: pointer;
+    color: rgb(101, 101, 101);
+    box-shadow: 0px 0px 0px 1px grey inset;
+    background-color: rgb(239, 233, 233);
+}
+
+.jobs-detail-center {
+    padding: 25px 0px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.body-people {
+    display: none;
 }
 
 @keyframes blobAnimation {

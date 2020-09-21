@@ -1,6 +1,7 @@
 const nav = document.querySelector('.nav');
 const seeMore = document.querySelector('.request-style-see');
 const reqLinks = document.querySelector('.req-links');
+const links = document.querySelector('.link-span');
 
 const arrClass = [
     'home',
@@ -94,4 +95,12 @@ navBarHandler();
 seeMore.addEventListener("click", () => {
     reqLinks.style.display = "block";
     seeMore.style.visibility = "hidden";
+});
+
+seeMore.addEventListener("mouseover", () => {
+    links.style.textDecoration = "underline";
+});
+
+seeMore.addEventListener("mouseleave", () => {
+    links.style.textDecoration = "none";
 });
