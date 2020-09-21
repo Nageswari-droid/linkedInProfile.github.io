@@ -181,7 +181,6 @@ body {
 .work {
     height: 100%;
     border: none;
-    /* border-left: 1px solid white; */
 }
 
 .link {
@@ -196,7 +195,7 @@ body {
     color: #dccea4;
 }
 
-a:hover {
+.link a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -508,22 +507,6 @@ a:hover {
     position: fixed;
     animation-name: example;
     animation-duration: 1s;
-}
-
-
-/* div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-} */
-
-@keyframes example {
-    0% {
-        top: 30px
-    }
-    100% {
-        top: 140px
-    }
 }
 
 .menu {
@@ -1410,9 +1393,17 @@ td {
     }
 }
 
+@keyframes example {
+    0% {
+        top: 30px
+    }
+    100% {
+        top: 140px
+    }
+}
+
 .blob-icon {
     position: relative;
-    animation-duration: 500ms;
 }
 
 @media only screen and (max-width:1365px) {

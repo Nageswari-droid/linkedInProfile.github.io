@@ -1,6 +1,6 @@
 const suggest = document.querySelector('.suggest-company');
 
-const imgArr = ["/image/next.png", "/image/Picture1.png", "/image/symbol.png"];
+const imgArr = ["../desktopView/image/next.png", "../desktopView/image/Picture1.png", "../desktopView/image/symbol.png"];
 const compName = ["Go TestSeries", "gotestseries", "Ridhan Technologies Pvt Ltd"];
 const compDesc = ["E-learning", "Capital Markets", "Computer Software"];
 

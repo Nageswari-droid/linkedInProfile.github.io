@@ -72,23 +72,37 @@ reqSec.prepend(newLikeEle);
 
 const thumbsUp = document.querySelector('.thumbs-style');
 
-reqSec.addEventListener("mouseover", () => {
-    thumbsUp.style.visibility = "visible";
-    // const blobArray = ['thumbs', 'love', 'insight', 'think', 'clap', 'hand'];
+reqSec.addEventListener('mouseover', async() => {
+    function sleep(t) {
+        return new Promise((resolve) => {
+            setTimeout(resolve, t);
+        });
+    }
 
-    // for (let i = 0; blobArray.length; i++) {
-    //     setInterval(function() {
-    //         document.getElementById(blobArray[i]).style.animation =
-    //             'blobAnimation';
-    //     }, 1000);
-    // }
-})
+    thumbsUp.style.visibility = 'visible';
+    const blobArray = ['thumbs', 'love', 'insight', 'think', 'clap', 'hand'];
+    await sleep(200);
 
-reqSec.addEventListener("mouseleave", () => {
+    for (let i = 0; i < blobArray.length; i++) {
+        console.log(blobArray[i]);
 
-    thumbsUp.style.visibility = "hidden";
+        if (document.getElementById(blobArray[i])) {
+            document.getElementById(blobArray[i]).style.animation =
+                'blobAnimation';
+            document.getElementById(blobArray[i]).style.animationDuration =
+                '600ms';
+            document.getElementById(
+                    blobArray[i]
+                ).style.animationTimingFunction =
+                'cubic-bezier(0.9, -0.12, 0, 0.94)';
+            await sleep(60);
+        }
+    }
+});
 
-})
+reqSec.addEventListener('mouseleave', () => {
+    // thumbsUp.style.visibility = 'hidden';
+});
 
 const likeCountInc = document.querySelector('.request-thumbs-style');
 const icon = document.querySelector('.comment-icon');

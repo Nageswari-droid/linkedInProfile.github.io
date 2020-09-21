@@ -35,22 +35,6 @@ menu.forEach((element, index) => {
         nodeHandler(idVal);
     })
 
-    // menu[index].addEventListener("mouseover", function(event) {
-
-    //     idVal = event.target.id;
-
-    //     hoverHandler(idVal);
-
-    // })
-
-    // menu[index].addEventListener("mouseleave", function(event) {
-
-    //     idVal = event.target.id;
-
-    //     leaveHandler(idVal);
-
-    // })
-
 });
 
 function borderColorHandler(idVal) {
@@ -130,29 +114,3 @@ seeAll.addEventListener("click", () => {
     aboutSec.style.display = "block";
     bodyCenter.appendChild(aboutSec);
 });
-
-// function hoverHandler(idVal) {
-
-//     menu.forEach((ele, index) => {
-//         console.log(menu[index].style.color);
-//         if (menu[index].id == idVal && menu[index].style.color != "rgb(3, 90, 137)") {
-//             menu[index].style.color = "#6f6c6c";
-//         } else {
-//             menu[index].style.color = "#035a89";
-//         }
-
-//     })
-
-// }
-
-// function leaveHandler(idVal) {
-//     menu.forEach((ele, index) => {
-
-//         if (menu[index].id == idVal && menu[index].style.color != "#035a89") {
-//             menu[index].style.color = "#505050";
-//         } else if (menu[index].style.color == "#035a89") {
-//             menu[index].style.color = "#0073B1";
-//         }
-
-//     })
-// }
