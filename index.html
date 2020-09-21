@@ -18,14 +18,41 @@
 
 <body>
     <div class="parent">
+        <div class="backdrop">
+
+        </div>
         <div class="parent-header">
             <div class="header">
                 <div class="center-align">
                     <div class="icon-search-style">
                         <img src="image/square-linkedin-512.webp" width="35" height="35">
-                        <div class="search-bar">
-                            <img src="image/search-solid.svg" class="search-bar-img" width="20" height="15">
-                            <input type="text" placeholder="Search" class="search">
+                        <div class="searching-class">
+                            <div class="search-bar">
+                                <div class="search-img">
+                                    <img src="image/search-solid.svg" class="search-bar-img" width="20" height="15">
+                                </div>
+                                <input type="text" placeholder="Search" class="search">
+                            </div>
+
+                            <div class="search-list">
+                                <div class="head-search">
+                                    <div class="head-search-try">
+                                        Try searching for
+                                    </div>
+                                    <div class="search-opt">
+                                        <div><img src="image/search-solid.svg" class="search-bar-img" width="15" height="10"></div>
+                                        <div class="search-opt-txt">Front end developer</div>
+                                    </div>
+                                    <div class="search-opt">
+                                        <div><img src="image/search-solid.svg" class="search-bar-img" width="15" height="10"></div>
+                                        <div class="search-opt-txt">Back end developer</div>
+                                    </div>
+                                    <div class="search-opt">
+                                        <div><img src="image/search-solid.svg" class="search-bar-img" width="15" height="10"></div>
+                                        <div class="search-opt-txt">Full stack developer</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -57,11 +84,11 @@
                         </div>
                     </div>
                     <div class="header-select-btn">
-                        <div class="follow-btn">
+                        <div class="follow-btn" id="follow-id-new">
                             <span class="plus-style">+</span> Follow
                         </div>
                         <div class="visit-btn">
-                            Visit Website
+                            <a href="https://yaarme.com/login/">Visit Website</a>
                             <svg width="16" height="16">
                                 <path class="button-icon" d="M12 10v3a1 1 0 01-1 1H3a1 1 0 01-1-1V5a1 1 0 011-1h3v2H4v6h6v-2h2zm1-8H8v2h2.67L6 8.67 7.33 10 12 5.33V8h2V3a1 1 0 00-1-1z"></path>
                             </svg>
@@ -107,6 +134,12 @@
                                 YaarMe
                             </div>
                             <div class="profile-name-style-icon">
+                                <div class="following">
+                                    <svg width="16" height="16">                                    
+                                        <path style="fill:  rgb(99, 99, 99);" d="M15 3L6.57 13.72A.7.7 0 016 14a.72.72 0 01-.56-.27L1 8.07 2.36 7 6 11.72 13.68 2z"></path>
+                                    </svg>
+                                    <div style="color: rgb(99, 99, 99); font-size: 16px;">Following</div>
+                                </div>
                                 <svg class="menu-align" width="24" height="24">
                                     <path class="menu-icon" d="M2 10h4v4H2v-4zm8 4h4v-4h-4v4zm8-4v4h4v-4h-4z"></path>
                                 </svg>
@@ -125,11 +158,13 @@
                     </div>
                     <div class="body-profile-main-style">
                         <div class="body-profile-button">
-                            <div class="follow-btn">
-                                <span class="plus-style">+</span> Follow
+                            <div class="follow-btn" id="follow-btn-id">
+                                <div class="follow-btn-style">
+                                    <span class="plus-style">+</span> Follow
+                                </div>
                             </div>
                             <div class="visit-btn">
-                                Visit Website
+                                <a href="https://yaarme.com/login/">Visit Website</a>
                                 <svg width="16" height="16">
                                     <path class="button-icon" d="M12 10v3a1 1 0 01-1 1H3a1 1 0 01-1-1V5a1 1 0 011-1h3v2H4v6h6v-2h2zm1-8H8v2h2.67L6 8.67 7.33 10 12 5.33V8h2V3a1 1 0 00-1-1z"></path>
                                 </svg>
@@ -137,7 +172,7 @@
                         </div>
                         <div class="body-profile-emp">
                             <div class="body-profile-emp-text">
-                                See all 2 employees on LinkedIn
+                                See all employees on LinkedIn
                             </div>
                             <div>
                                 <svg width="16" height="16">
@@ -205,7 +240,16 @@
                         </div>
                     </div>
                     <div class="body-people">
-
+                        <div class="people-div-style">
+                            <div class="people-emp-found">
+                                <div>
+                                    <img src="image/ghost.svg" width="100" height="100">
+                                </div>
+                                <div class="people-emp-txt">
+                                    No employee found! Only Zombies here..
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -256,7 +300,7 @@
                                         <div class="request-head-style">
                                             <div class="req-head" style="font-size: 14px; color: rgb(36, 36, 36); font-weight: 600;">YaarMe</div>
                                             <div class="follow-req-icon">
-                                                <div class="request-follow-style">+ Follow</div>
+                                                <div class="request-follow-style" id="follow-id">+ Follow</div>
                                                 <div class="img-req-styles">
                                                     <div class="img-req-style-menu">
 

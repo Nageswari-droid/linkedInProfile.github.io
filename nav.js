@@ -2,6 +2,12 @@ const nav = document.querySelector('.nav');
 const seeMore = document.querySelector('.request-style-see');
 const reqLinks = document.querySelector('.req-links');
 const links = document.querySelector('.link-span');
+const search = document.querySelector('.search');
+const backdrop = document.querySelector('.backdrop');
+const searchIcon = document.querySelector('.search-img');
+
+const searchBar = document.querySelector('.search-bar');
+const searchList = document.querySelector('.search-list');
 
 const arrClass = [
     'home',
@@ -103,4 +109,18 @@ seeMore.addEventListener("mouseover", () => {
 
 seeMore.addEventListener("mouseleave", () => {
     links.style.textDecoration = "none";
+});
+
+search.addEventListener('click', () => {
+    backdrop.style.display = "block";
+    searchBar.classList.add('search-bar-visible');
+    searchIcon.classList.add('search-img-visible');
+    searchList.style.display = "block";
+})
+
+backdrop.addEventListener("click", () => {
+    backdrop.style.display = "none";
+    searchBar.classList.remove('search-bar-visible');
+    searchIcon.classList.remove('search-img-visible');
+    searchList.style.display = "none";
 });

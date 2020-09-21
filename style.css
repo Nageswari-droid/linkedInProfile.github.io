@@ -10,6 +10,11 @@ body {
     width: 100%;
 }
 
+.parent {
+    width: 100%;
+    height: 100%;
+}
+
 .header-info {
     display: none;
     width: 100%;
@@ -17,7 +22,7 @@ body {
     position: fixed;
     padding: 10px 0px;
     top: 55px;
-    z-index: 100;
+    z-index: 98;
     background-color: white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
 }
@@ -73,6 +78,10 @@ body {
     gap: 6px;
 }
 
+.searching-class {
+    display: block;
+}
+
 .search-bar {
     display: flex;
     align-items: center;
@@ -80,6 +89,58 @@ body {
     width: 279px;
     border-radius: 2px;
     padding-left: 5px;
+}
+
+.search-bar-visible {
+    width: 350px;
+}
+
+.search-img-visible {
+    padding: 0px 5px;
+}
+
+.search-list {
+    display: none;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 45px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
+    padding: 20px 15px;
+    width: 558px;
+}
+
+.head-search {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-opt {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.search-opt-txt {
+    font-size: 14px;
+    color: rgb(41, 41, 41);
+    font-weight: 600;
+}
+
+.head-search-try {
+    font-size: 14px;
+    color: rgb(70, 70, 70);
+}
+
+.backdrop {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 1448px;
+    top: 0vh;
+    z-index: 99;
 }
 
 .search {
@@ -129,8 +190,8 @@ body {
     line-height: 20px;
 }
 
-a:link,
-a:visited {
+.link a:link,
+.link a:visited {
     text-decoration: none;
     color: #dccea4;
 }
@@ -327,7 +388,7 @@ a:hover {
 }
 
 .follow-btn {
-    max-width: 139px;
+    /* max-width: 139px; */
     border: 1px solid #0073B1;
     background-color: #0073B1;
     color: white;
@@ -347,6 +408,13 @@ a:hover {
     background-color: transparent;
     padding: 6px 12px;
     border-radius: 3px;
+}
+
+.visit-btn a:link,
+.visit-btn a:visited,
+.visit-btn a:active {
+    text-decoration: none;
+    color: #0073B1;
 }
 
 .button-icon {
@@ -386,12 +454,29 @@ a:hover {
 .profile-name-style-icon {
     padding: 0px 8px;
     border-radius: 60%;
+    display: flex;
+    align-items: center;
+    gap: 15px
 }
 
-.profile-name-style-icon:hover {
+.following {
+    display: none;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.follow-btn-style {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.menu-align:hover {
     cursor: pointer;
     border: 0px solid transparent;
-    background-color: rgb(231, 228, 228);
+    /* background-color: rgb(231, 228, 228); */
 }
 
 .body-itmes-style {
@@ -421,6 +506,24 @@ a:hover {
     max-width: 13%;
     top: 140px;
     position: fixed;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+} */
+
+@keyframes example {
+    0% {
+        top: 30px
+    }
+    100% {
+        top: 140px
+    }
 }
 
 .menu {
@@ -565,6 +668,10 @@ a:hover {
 
 .sort-by {
     width: 15%;
+}
+
+.sort-by:hover {
+    cursor: pointer;
 }
 
 .ad-section {
@@ -1207,7 +1314,7 @@ td {
 }
 
 .body-jobs {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -1264,7 +1371,27 @@ td {
 }
 
 .body-people {
-    display: none;
+    /* display: none; */
+    width: 100%;
+}
+
+.people-div-style {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
+    padding: 80px 0px;
+}
+
+.people-emp-found {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.people-emp-txt {
+    color: rgb(96, 96, 96);
+    font-weight: 600;
 }
 
 @keyframes blobAnimation {
