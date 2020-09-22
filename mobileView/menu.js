@@ -4,7 +4,7 @@ const menu = document.querySelectorAll(".menu");
 const homeSec = document.querySelector('.body-about');
 const aboutSec = document.querySelector('.body-about-style');
 const jobsSec = document.querySelector('.body-jobs');
-// const peopleSec = document.querySelector('.body-people');
+const peopleSec = document.querySelector('.body-people');
 
 const homeBtn = document.querySelector('#home-menu');
 const aboutBtn = document.querySelector('#about-menu');
@@ -44,27 +44,32 @@ function nodeHandler(idVal) {
 
     if (idVal === homeBtn.id) {
 
+        peopleSec.style.display = "none";
         homeSec.style.display = "block";
         aboutSec.style.display = "none";
         jobsSec.style.display = "none";
 
     } else if (idVal === aboutBtn.id) {
 
+        peopleSec.style.display = "none";
         homeSec.style.display = "none";
         aboutSec.style.display = "block";
         jobsSec.style.display = "none";
 
     } else if (idVal === jobsBtn.id) {
 
+        peopleSec.style.display = "none";
         homeSec.style.display = "none";
         aboutSec.style.display = "none";
         jobsSec.style.display = "block";
 
     } else if (idVal === peopleBtn.id) {
 
+        peopleSec.style.display = "block";
         homeSec.style.display = "none";
         aboutSec.style.display = "none";
         jobsSec.style.display = "none";
+
     }
 
 }

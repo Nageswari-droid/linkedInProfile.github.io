@@ -84,7 +84,7 @@ reqSec.addEventListener('mouseover', async() => {
     await sleep(200);
 
     for (let i = 0; i < blobArray.length; i++) {
-        console.log(blobArray[i]);
+        // console.log(blobArray[i]);
 
         if (document.getElementById(blobArray[i])) {
             document.getElementById(blobArray[i]).style.animation =
@@ -101,7 +101,7 @@ reqSec.addEventListener('mouseover', async() => {
 });
 
 reqSec.addEventListener('mouseleave', () => {
-    // thumbsUp.style.visibility = 'hidden';
+    thumbsUp.style.visibility = 'hidden';
 });
 
 const likeCountInc = document.querySelector('.request-thumbs-style');
