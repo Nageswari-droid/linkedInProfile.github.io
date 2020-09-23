@@ -96,8 +96,30 @@ const followCount = document.querySelector('#follow-count');
 const followCountNew = document.querySelector('#follow-count-another');
 
 followParent.addEventListener("click", () => {
-    console.log(followAnotherId);
-    console.log(followCount);
+
+    let result = +(followCount.textContent.split(' ')[0]);
+    followCount.textContent = result + 1 + " followers";
+    followCountNew.textContent = result + 1 + " followers";
+
+    following.style.display = "flex";
+    followParent.style.display = "none";
+    followAnotherId.style.visibility = "hidden";
+    followFirstId.style.visibility = "hidden";
+});
+
+followAnotherId.addEventListener("click", () => {
+
+    let result = +(followCount.textContent.split(' ')[0]);
+    followCount.textContent = result + 1 + " followers";
+    followCountNew.textContent = result + 1 + " followers";
+
+    following.style.display = "flex";
+    followParent.style.display = "none";
+    followAnotherId.style.visibility = "hidden";
+    followFirstId.style.visibility = "hidden";
+});
+
+followFirstId.addEventListener("click", () => {
 
     let result = +(followCount.textContent.split(' ')[0]);
     followCount.textContent = result + 1 + " followers";
